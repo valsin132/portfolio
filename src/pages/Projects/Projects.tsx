@@ -18,6 +18,15 @@ export function Projects() {
         isLink
         link="https://github.com/valsin132/Lunch-app"
       />
+      <Card
+        title="Lunch-app"
+        description="Project is setup using Vite (React / TypeScript), PostCSS, Jest, React Testing Library."
+        technologiesHeading="Technologies used include:"
+        technologies="HTML, PostCSS, Vite ( REACT / TypeScript )"
+        img={lunchApp}
+        isLink
+        link="https://github.com/valsin132/Lunch-app"
+      />
     </div>
   );
 }
