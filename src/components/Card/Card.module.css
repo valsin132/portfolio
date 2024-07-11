@@ -1,0 +1,69 @@
+@import '../../styles/index.css';
+
+.card {
+  padding: $spacing-l $spacing-s;
+
+  & .card__title {
+    color: $color-aqua;
+    font-family: $font-family-mono;
+    font-size: $font-size-m;
+    padding: $spacing-s 0;
+  }
+
+  & .card__description {
+    line-height: $line-height-ratio-m;
+    padding: $spacing-s 0;
+  }
+
+  & .card__link {
+    color: $color-aqua;
+    padding-bottom: $spacing-s;
+  }
+
+  & .card__tech-heading {
+    padding-bottom: $spacing-s;
+  }
+
+  & .card__technologies {
+    padding-bottom: $spacing-s;
+  }
+
+  & .card__img {
+    border-left: 1px solid $color-orange;
+    border-radius: $border-radius-m;
+    border-top: 1px solid $color-orange;
+    padding: $spacing-s;
+  }
+}
+
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (min-width: 800px) {
+  
+  .card__container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    & .card__text-container {
+      grid-column: 7/11;
+      grid-row: 1/2;
+      order: 2;
+      text-align: right;
+    }
+
+    & .card__img {
+      grid-column: 1/6;
+      grid-row: 1/2;
+    }
+  }
+
+  .card--reverse .card__text-container {
+    grid-column: 1/5;
+    order: 2;
+    text-align: left;
+  }
+
+  .card--reverse .card__img {
+    grid-column: 6/11;
+    grid-row: 1/2;
+  }
+}

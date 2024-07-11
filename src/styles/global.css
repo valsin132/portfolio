@@ -1,0 +1,62 @@
+@import './index.css';
+@import 'normalize.css/normalize.css';
+@import 'https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-page-background;
+  color: $color-white;
+  font-family: $font-family-sans;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-orange;
+}
+
+a.active {
+  color: $color-orange;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+ul,
+ol {
+  border: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

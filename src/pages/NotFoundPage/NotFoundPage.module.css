@@ -1,0 +1,16 @@
+@import '../../styles/index.css';
+
+.not-found-page__content {
+  @include flexbox($direction: column, $alignItems: center, $gap: $gap-l);
+
+  color: $color-orange;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  & .not-found-page__header {
+    color: $color-orange;
+    font-size: $font-size-banner;
+  }
+}

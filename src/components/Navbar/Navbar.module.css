@@ -1,0 +1,61 @@
+@import '../../styles/index.css';
+
+.navbar__wrapper {
+  font-family: $font-family-mono;
+  padding: $spacing-l $spacing-s;
+}
+
+/* .navbar__container a.active {
+  color: $color-orange;
+} */
+
+nav h1 a {
+  font-family: $font-family-sans;
+}
+
+.navbar__container {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: $font-size-s;
+  gap: $gap-m;
+  justify-content: center;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  font-size: $font-size-xs;
+  text-align: center;
+}
+
+nav [class*='fa-'] {
+  color: $color-aqua;
+  font-size: $font-size-m;
+}
+
+nav h1 [class*='fa-'] {
+  color: $color-aqua;
+}
+
+nav [class*='fa-']:hover {
+  color: $color-orange;
+}
+
+button {
+  background-color: $color-orange;
+  border-radius: $border-radius-s;
+  color: $color-black;
+}
+
+button:hover {
+  color: $color-white;
+}
+
+@media (min-width: 850px) {
+  
+  nav li:first-child {
+    flex-basis: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}

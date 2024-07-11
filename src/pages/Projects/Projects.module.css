@@ -1,0 +1,6 @@
+@import '../../styles/index.css';
+
+.projects-heading {
+  font-size: $font-size-l;
+  padding: 0 $spacing-s;
+}

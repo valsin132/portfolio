@@ -1,0 +1,13 @@
+@import '../../styles/index.css';
+
+.footer__wrapper {
+  padding: $spacing-l $spacing-s $spacing-s;
+  text-align: center;
+
+  & .footer__container {
+    @include flexbox($justifyContent: center, $wrap: wrap, $gap: $gap-l);
+
+    font-size: $font-size-l;
+    padding-bottom: $spacing-m;
+  }
+}
