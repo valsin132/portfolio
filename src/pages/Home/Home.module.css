@@ -25,11 +25,11 @@
 }
 
 /* stylelint-disable-next-line media-feature-range-notation */
-@media (max-width: 650px) {
+@media (max-width: 576px) {
 
   & .intro__container {
     padding-top: 0;
-    
+
     & .intro__header {
       font-size: $font-size-s;
 

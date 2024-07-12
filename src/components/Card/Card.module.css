@@ -67,3 +67,11 @@
     grid-row: 1/2;
   }
 }
+
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (max-width: 576px) {
+
+  & .card {
+    padding-top: $spacing-s;
+  }
+}

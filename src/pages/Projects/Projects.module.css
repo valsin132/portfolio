@@ -4,3 +4,11 @@
   font-size: $font-size-l;
   padding: 0 $spacing-s;
 }
+
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (max-width: 576px) {
+  
+  & .projects-heading {
+    font-size: $font-size-m;
+  }
+}
