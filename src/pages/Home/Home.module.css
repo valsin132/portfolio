@@ -25,13 +25,21 @@
 }
 
 /* stylelint-disable-next-line media-feature-range-notation */
-@media (max-width: 500px) {
+@media (max-width: 650px) {
 
-  .intro__name {
-    font-size: $font-size-l;
-  }
+  & .intro__container {
+    padding-top: 0;
+    
+    & .intro__header {
+      font-size: $font-size-s;
 
-  .intro__about {
-    font-size: $font-size-l;
+      & .intro__name {
+        font-size: $font-size-l;
+      }
+    }
+
+    & .intro__about {
+      font-size: $font-size-l;
+    }
   }
 }
