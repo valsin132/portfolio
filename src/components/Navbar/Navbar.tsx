@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { NavLink } from 'react-router-dom';
+import ValdemarasSinkeviciusCV from '../../assets/images/ValdemarasSinkeviciusCV.pdf';
 import styles from './Navbar.module.css';
 
 const cx = classNames.bind(styles);
@@ -35,7 +36,9 @@ export function Navbar() {
           </NavLink>
         </li>
         <li>
-          <button type="button">Resume</button>
+          <button type="button" onClick={() => window.open(ValdemarasSinkeviciusCV)}>
+            Resume
+          </button>
         </li>
       </ul>
     </nav>
