@@ -10,10 +10,7 @@ export function About() {
   return (
     <Card
       title="About Valdemaras Sinkevicius"
-      description="Description of the project. This should be fairly concise while also describing
-                        the key components that you developed or worked on. It can be as long as you need it to be but
-                        should at least be a few sentences long. Be sure to include specific links anywhere in the
-                        description."
+      description="A passionate developer"
       technologiesHeading="My favorite technologies include:"
       technologies="HTML, CSS, JS, TS, REACT, NodeJS"
       img={myPhoto}
