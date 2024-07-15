@@ -5,14 +5,6 @@
   padding: $spacing-l $spacing-s;
 }
 
-/* .navbar__container a.active {
-  color: $color-orange;
-} */
-
-nav h1 a {
-  font-family: $font-family-sans;
-}
-
 .navbar__container {
   align-items: center;
   display: flex;
@@ -20,6 +12,10 @@ nav h1 a {
   font-size: $font-size-s;
   gap: $gap-m;
   justify-content: center;
+
+  & .navbar__name {
+    font-family: $font-family-sans;
+  }
 }
 
 nav li:first-child {
@@ -41,16 +37,17 @@ nav [class*='fa-']:hover {
   color: $color-orange;
 }
 
-button {
+.navbar__cv-btn {
   background-color: $color-orange;
   border-radius: $border-radius-s;
   color: $color-black;
 }
 
-button:hover {
+.navbar__cv-btn:hover {
   color: $color-white;
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media (min-width: 850px) {
   
   nav li:first-child {

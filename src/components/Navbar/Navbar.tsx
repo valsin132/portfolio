@@ -13,7 +13,7 @@ export function Navbar() {
           <h1>
             <NavLink to="/">
               <i className="fa-solid fa-code" aria-hidden="true" />
-              <span> Valdemaras Sinkevicius</span>
+              <span className={cx('navbar__name')}> Valdemaras Sinkevicius</span>
             </NavLink>
           </h1>
         </li>
@@ -36,7 +36,10 @@ export function Navbar() {
           </NavLink>
         </li>
         <li>
-          <button type="button" onClick={() => window.open(ValdemarasSinkeviciusCV)}>
+          <button
+            className={cx('navbar__cv-btn')}
+            type="button"
+            onClick={() => window.open(ValdemarasSinkeviciusCV)}>
             Resume
           </button>
         </li>
