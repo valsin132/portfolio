@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import { NavLink } from 'react-router-dom';
-import ValdemarasSinkeviciusCV from '../../assets/images/ValdemarasSinkeviciusCV.pdf';
+import ValdemarasSinkeviciusCV from '../../assets/images/ValdemarasSinkevicius.pdf';
 import styles from './Navbar.module.css';
 
 const cx = classNames.bind(styles);

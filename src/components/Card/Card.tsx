@@ -35,7 +35,7 @@ export function Card({
           {isLink && link && (
             <h4 className={cx('card__link')}>
               <Link to={link} target="_blank">
-                Link to project
+                Link to project GitHub repository
               </Link>
             </h4>
           )}
