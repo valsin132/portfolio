@@ -1,5 +1,7 @@
 import classNames from 'classnames/bind';
 import { NavLink } from 'react-router-dom';
+import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import { FaCode } from 'react-icons/fa6';
 import ValdemarasSinkeviciusCV from '../../assets/images/ValdemarasSinkevicius.pdf';
 import styles from './Navbar.module.css';
 
@@ -9,10 +11,10 @@ export function Navbar() {
   return (
     <nav className={cx('navbar__wrapper')}>
       <ul className={cx('navbar__container')}>
-        <li>
+        <li className={cx('navbar__logo')}>
           <h1>
             <NavLink to="/">
-              <i className="fa-solid fa-code" aria-hidden="true" />
+              <FaCode className={cx('navbar__code-icon')} />
               <span className={cx('navbar__name')}> Valdemaras Sinkevicius</span>
             </NavLink>
           </h1>
@@ -25,14 +27,12 @@ export function Navbar() {
         </li>
         <li>
           <NavLink to="https://linkedin.com/in/valdemaras-sinkevicius-a5832b2aa" target="_blank">
-            <i className="fa-brands fa-linkedin" aria-hidden="true" />
-            <span className="sr-only"> LinkedIn</span>
+            <FaLinkedin className={cx('navbar__linkedin-icon')} />
           </NavLink>
         </li>
         <li>
           <NavLink to="https://www.github.com/valsin132" target="_blank">
-            <i className="fa-brands fa-square-github" aria-hidden="true" />
-            <span className="sr-only"> Github</span>
+            <FaGithubSquare className={cx('navbar__github-icon')} />
           </NavLink>
         </li>
         <li>
