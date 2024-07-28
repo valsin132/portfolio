@@ -1,20 +1,17 @@
+/* stylelint-disable media-feature-range-notation */
 @import '../../styles/index.css';
 
 .navbar__wrapper {
+  @include flexbox($alignItems: center, $wrap: wrap, $justifyContent: center, $gap: $gap-m);
+
   font-family: $font-family-mono;
   padding: $spacing-l $spacing-s;
 }
 
-.navbar__container {
-  @include flexbox($alignItems: center, $wrap: wrap, $justifyContent: center, $gap: $gap-m);
-
-  font-size: $font-size-s;
-}
-
 .navbar__logo {
   flex-basis: 100%;
-  font-size: $font-size-xs;
-  text-align: center;
+  font-size: $font-size-medium;
+  text-align: left;
 
   & .navbar__code-icon {
     color: $color-aqua;
@@ -29,6 +26,12 @@
   & .navbar__name {
     font-family: $font-family-sans;
   }
+}
+
+.navbar__container {
+  @include flexbox($alignItems: center, $wrap: wrap, $justifyContent: center, $gap: $gap-m);
+
+  font-size: $font-size-s;
 }
 
 .navbar__linkedin-icon,
@@ -51,12 +54,52 @@
   color: $color-white;
 }
 
-/* stylelint-disable-next-line media-feature-range-notation */
+.navbar__burger-btn {
+  background-color: inherit;
+  color: $color-orange;
+  display: none;
+  font-size: $font-size-medium;
+
+  &:active {
+    color: $color-white;
+  }
+}
+
 @media (min-width: 850px) {
-  
+
   .navbar__logo {
     flex-basis: auto;
     margin-right: auto;
     text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .navbar__burger-btn {
+    display: flex;
+    position: absolute;
+    right: $spacing-s;
+    top: $spacing-burger-l;
+  }
+
+  .navbar__container {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar__burger-open {
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .navbar__logo {
+    font-size: $font-size-s;
+  }
+
+  .navbar__burger-btn {
+    top: $spacing-burger-m;
   }
 }

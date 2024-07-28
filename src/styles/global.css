@@ -1,7 +1,6 @@
 @import './index.css';
 @import 'normalize.css/normalize.css';
 @import 'https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap';
-@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
 
 *,
 *::before,
@@ -39,6 +38,7 @@ a.active {
 button {
   border: 0;
   cursor: pointer;
+  outline: none;
   padding: 0.5rem;
 }
 
