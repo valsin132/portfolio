@@ -15,7 +15,6 @@
 
   & .navbar__code-icon {
     color: $color-aqua;
-    font-size: $font-size-medium;
     vertical-align: middle;
 
     &:hover {
@@ -58,7 +57,7 @@
   background-color: inherit;
   color: $color-orange;
   display: none;
-  font-size: $font-size-medium;
+  font-size: $font-size-m;
 
   &:active {
     color: $color-white;
@@ -76,11 +75,16 @@
 
 @media (max-width: 900px) {
 
+  .navbar__logo {
+    height: 100%;
+		width: 100%;
+  }
+
   .navbar__burger-btn {
     display: flex;
     position: absolute;
     right: $spacing-s;
-    top: $spacing-burger-l;
+    top: $spacing-burger-xl;
   }
 
   .navbar__container {
@@ -100,6 +104,6 @@
   }
 
   .navbar__burger-btn {
-    top: $spacing-burger-m;
+    top: $spacing-burger-l;
   }
 }
