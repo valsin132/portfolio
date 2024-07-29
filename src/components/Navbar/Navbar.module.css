@@ -49,7 +49,7 @@
   color: $color-black;
 }
 
-.navbar__cv-btn:hover {
+.navbar__cv-btn:active {
   color: $color-white;
 }
 

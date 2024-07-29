@@ -13,4 +13,13 @@
     color: $color-orange;
     font-size: $font-size-banner;
   }
+
+  & .not-found-page__button {
+    background-color: $color-orange;
+    border-radius: $border-radius-s;
+
+    &:active {
+      color: $color-white;
+    }
+  }
 }

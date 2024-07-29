@@ -27,11 +27,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: $color-orange;
-}
-
-a.active {
+a:hover, a.active {
   color: $color-orange;
 }
 

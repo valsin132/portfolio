@@ -12,7 +12,7 @@ export function NotFoundPage() {
       <p className={cx('not-found-page__header')}>Oops!</p>
       <h1>Page not found!</h1>
       <p>The page you are looking for might have been removed or is temporarily unavailable.</p>
-      <button type="button" onClick={() => navigate('/')}>
+      <button className={cx('not-found-page__button')} type="button" onClick={() => navigate('/')}>
         Go to Home page
       </button>
     </div>
