@@ -30,7 +30,7 @@ export function Navbar() {
           <span className={cx('navbar__name')}> Valdemaras Sinkevicius</span>
         </NavLink>
       </h1>
-      <ul className={cx('navbar__container', menuOpen ? 'navbar__burger-open' : '')}>
+      <ul className={cx('navbar__container', { 'navbar__burger-open': menuOpen })}>
         <li>
           <NavLink to="/projects" onClick={handleMenuItemClick}>
             Projects
