@@ -9,5 +9,6 @@
 
     font-size: $font-size-l;
     padding-bottom: $spacing-m;
+    padding-top: inherit;
   }
 }

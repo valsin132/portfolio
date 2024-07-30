@@ -72,6 +72,6 @@
 @media (max-width: 576px) {
 
   & .card {
-    padding-top: $spacing-s;
+    padding: $spacing-s 0;
   }
 }
