@@ -50,7 +50,7 @@
 }
 
 .navbar__cv-btn:active {
-  color: $color-white;
+  background-color: $color-yellow;
 }
 
 .navbar__burger-btn {
