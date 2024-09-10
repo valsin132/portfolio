@@ -8,7 +8,8 @@ const cx = classNames.bind(styles);
 interface CardProps {
   title: string;
   description: string;
-  link?: string;
+  projectLink?: string;
+  githubtLink?: string;
   isLink?: boolean;
   technologiesHeading?: string;
   technologies?: string;
@@ -19,7 +20,8 @@ interface CardProps {
 export function Card({
   title,
   description,
-  link,
+  projectLink,
+  githubtLink,
   isLink,
   technologiesHeading,
   technologies,
@@ -32,9 +34,12 @@ export function Card({
         <div className={cx('card__text-container')}>
           <h3 className={cx('card__title')}>{title}</h3>
           <p className={cx('card__description')}>{description}</p>
-          {isLink && link && (
+          {isLink && projectLink && githubtLink && (
             <h4 className={cx('card__link')}>
-              <Link to={link} target="_blank">
+              <Link to={projectLink} target="_blank">
+                Link to project
+              </Link>
+              <Link to={githubtLink} target="_blank">
                 Link to project GitHub repository
               </Link>
             </h4>

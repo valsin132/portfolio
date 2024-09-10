@@ -16,6 +16,8 @@
   }
 
   & .card__link {
+    @include flexbox($direction: column, $gap: $gap-xs);
+
     color: $color-aqua;
     padding-bottom: $spacing-s;
   }
