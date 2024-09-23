@@ -5,28 +5,28 @@ const cx = classNames.bind(styles);
 
 export function ContactForm() {
   return (
-    <div>
-      <form className={cx('formContainer')}>
-        <h2>Send me a message. Let&apos;s have a chat!</h2>
-        <div className={cx('formElement')}>
+    <div className={cx('form__wrapper')}>
+      <form className={cx('form__container')}>
+        <h2 className={cx('form__heading')}>Get in touch!</h2>
+        <div className={cx('form__element')}>
           <label htmlFor="name">
             Name
-            <input type="text" id="name" placeholder="Your name.." required />
+            <input type="text" id="name" placeholder="Your name" required />
           </label>
         </div>
-        <div className={cx('formElement')}>
+        <div className={cx('form__element')}>
           <label htmlFor="email">
             E-mail
-            <input type="email" id="email" placeholder="Your email.." required />
+            <input type="email" id="email" placeholder="Your e-mail" required />
           </label>
         </div>
-        <div className={cx('formElement')}>
+        <div className={cx('form__element')}>
           <label htmlFor="message">
             Message
-            <textarea id="message" placeholder="Your message.." required />
+            <textarea id="message" placeholder="Your message" required />
           </label>
         </div>
-        <button type="submit" className={cx('formButton')}>
+        <button type="submit" className={cx('form__button')}>
           Submit
         </button>
       </form>
