@@ -48,4 +48,8 @@ Thumbs.db
 *.mov
 *.wmv
 
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> d45ced662dcf8cee42f90a34d92ba3c107094bad
