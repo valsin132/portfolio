@@ -3,9 +3,9 @@ import classNames from 'classnames/bind';
 import { useState } from 'react';
 import styles from './ContactForm.module.css';
 
-const SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
+const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 const cx = classNames.bind(styles);
 
 export function ContactForm() {
@@ -17,7 +17,7 @@ export function ContactForm() {
 
     const form = e.target as HTMLFormElement;
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY).then(
+    emailjs.sendForm(serviceId, templateId, form, publicKey).then(
       () => {
         setMessage('Message sent successfully!');
         setError(null);
