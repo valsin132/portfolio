@@ -32,12 +32,12 @@ textarea {
 }
 
 .form__button {
+  border: 2px solid black;
+  border-radius: $border-radius-s;
   width: 100px;
   padding: 0.5rem;
   margin: 0 auto;
-  border-radius: $border-radius-s;
   font-weight: 600;
-  border: 2px solid black;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in;
   background-color: $color-orange;
