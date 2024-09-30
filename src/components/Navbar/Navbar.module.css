@@ -85,6 +85,7 @@
     position: absolute;
     right: $spacing-s;
     top: $spacing-burger-xl;
+    transition: 1s;
   }
 
   .navbar__container {
