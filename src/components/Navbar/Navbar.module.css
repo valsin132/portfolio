@@ -45,8 +45,13 @@
 
 .navbar__cv-btn {
   background-color: $color-orange;
-  border-radius: $border-radius-s;
+  border-radius: $border-radius-m;
   color: $color-black;
+  transition: all 0.2s ease-in;
+}
+
+.navbar__cv-btn:hover {
+  transform: translateX(-2px) translateY(-2px);
 }
 
 .navbar__cv-btn:active {
