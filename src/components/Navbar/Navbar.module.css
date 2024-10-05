@@ -80,9 +80,7 @@
 
 @media (max-width: 900px) {
 
-  .navbar__wrapper {
-    padding-bottom: $spacing-s;
-  }
+ 
 
   .navbar__logo {
     height: 100%;
