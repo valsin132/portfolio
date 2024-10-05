@@ -97,7 +97,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
 
   .navbar__logo {
     font-size: $font-size-s;
