@@ -33,7 +33,7 @@
   font-size: $font-size-s;
 }
 
-.navbar__linkedin-icon,
+& .navbar__linkedin-icon,
 .navbar__github-icon {
   color: $color-aqua;
   font-size: $font-size-m;
@@ -82,7 +82,7 @@
 
   .navbar__logo {
     height: 100%;
-		width: 100%;
+    width: 100%;
   }
 
   .navbar__burger-btn {
@@ -93,12 +93,16 @@
   }
 
   .navbar__container {
-    display: none;
     flex-direction: column;
+    height: 0;
+    opacity: 0;
   }
 
   .navbar__burger-open {
     display: flex;
+    height: auto;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
   }
 }
 
