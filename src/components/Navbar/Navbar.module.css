@@ -96,6 +96,7 @@
     flex-direction: column;
     height: 0;
     opacity: 0;
+    overflow: hidden;
   }
 
   .navbar__burger-open {
@@ -107,6 +108,10 @@
 }
 
 @media (max-width: 576px) {
+
+  .navbar__wrapper {
+    padding-bottom: $spacing-s;
+  }
 
   .navbar__logo {
     font-size: $font-size-s;
