@@ -10,10 +10,11 @@ export function Home() {
         Hi, my name is <span className={cx('intro__name')}>Valdemaras Sinkevicius.</span>
       </p>
       <h2 className={cx('intro__about')}>
-        I develop and create the web, the front end of websites.
+        I develop and create web applications, focusing on the front end of websites.
       </h2>
       <p className={cx('intro__tech')}>
-        I&apos;m a developer specializing in HTML, CSS, JS, TS, React, user experience.
+        I&apos;m a developer specializing in HTML, CSS, JS, TS, React, NodeJS, Express, MongoDB,
+        user experience.
       </p>
     </div>
   );
