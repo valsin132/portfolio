@@ -26,9 +26,9 @@
 
 /* stylelint-disable-next-line media-feature-range-notation */
 @media (max-width: 576px) {
-
+  
   & .intro__container {
-    padding-top: 0;
+    padding: 0 $spacing-s;
 
     & .intro__header {
       font-size: $font-size-s;

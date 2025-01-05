@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
 body {
   background-color: $color-page-background;
   color: $color-white;
