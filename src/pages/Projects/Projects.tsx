@@ -3,6 +3,7 @@ import { Card } from '../../components/Card';
 import lunchApp from '../../assets/images/lunchApp.png';
 import todoApp from '../../assets/images/todoApp.png';
 import homeService from '../../assets/images/homeService.png';
+import carRent from '../../assets/images/carRent.png'
 import styles from './Projects.module.css';
 
 const cx = classNames.bind(styles);
@@ -11,6 +12,16 @@ export function Projects() {
   return (
     <div>
       <h2 className={cx('projects-heading')}>Projects I&apos;m proud of</h2>
+      <Card
+        title="Car-Rent-App"
+        description="A car rental platform offering users an easy way to find and book cars at affordable prices. The app includes user and admin panels. User Panel: browse cars, select rental dates, and confirm bookings. Admin Panel: manage car listings, add new vehicles, and oversee reservations. The intuitive design ensures a smooth user experience, from registration to booking confirmation."
+        technologiesHeading="Technologies used include:"
+        technologies="HTML, CSS, REACT, Node.js, Express, MongoDB"
+        img={carRent}
+        isLink
+        projectLink="https://car-rent-app-iota.vercel.app"
+        githubtLink="https://github.com/valsin132/CarRentApp-main"
+      />
       <Card
         title="Lunch-App"
         description="Project is setup using Vite (React / TypeScript), PostCSS, Jest, React Testing Library."
