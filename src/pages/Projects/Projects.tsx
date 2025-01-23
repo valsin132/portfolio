@@ -14,7 +14,7 @@ export function Projects() {
       <h2 className={cx('projects-heading')}>Projects I&apos;m proud of</h2>
       <Card
         title="Car-Rent-App"
-        description="A car rental platform offering users an easy way to find and book cars at affordable prices. The app includes user and admin panels. User Panel: browse cars, select rental dates, and confirm bookings. Admin Panel: manage car listings, add new vehicles, and oversee reservations. The intuitive design ensures a smooth user experience, from registration to booking confirmation."
+        description="A car rental platform offering users an easy way to find and book cars. The app includes user and admin panels. User Panel: browse cars, select rental dates, and confirm bookings. Admin Panel: manage car listings, add new vehicles, and oversee reservations. The intuitive design ensures a smooth user experience, from registration to booking confirmation."
         technologiesHeading="Technologies used include:"
         technologies="HTML, CSS, REACT, Node.js, Express, MongoDB"
         img={carRent}
@@ -31,6 +31,7 @@ export function Projects() {
         isLink
         projectLink="https://lunch-app-beta.vercel.app"
         githubtLink="https://github.com/valsin132/Lunch-app"
+        isReverse
       />
       <Card
         title="Find Home Service & Repair"
@@ -41,7 +42,6 @@ export function Projects() {
         isLink
         projectLink="https://home-service-app-frontend-one.vercel.app"
         githubtLink="https://github.com/valsin132/home-service-app"
-        isReverse
       />
       <Card
         title="To-Do-App"
@@ -52,6 +52,7 @@ export function Projects() {
         isLink
         projectLink="https://to-do-app-one-wheat.vercel.app"
         githubtLink="https://github.com/valsin132/to-do-app"
+        isReverse
       />
     </div>
   );
