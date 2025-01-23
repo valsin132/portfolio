@@ -14,7 +14,7 @@ export function Projects() {
       <h2 className={cx('projects-heading')}>Projects I&apos;m proud of</h2>
       <Card
         title="Car-Rent-App"
-        description="A car rental platform offering users an easy way to find and book cars. The app includes user and admin panels. User Panel: browse cars, select rental dates, and confirm bookings. Admin Panel: manage car listings, add new vehicles, and oversee reservations. The intuitive design ensures a smooth user experience, from registration to booking confirmation."
+        description="A car rental platform is a full-stack web application offering users an easy way to find and book cars. The app includes user and admin panels. User Panel: browse cars, select rental dates, and confirm bookings. Admin Panel: manage car listings, add new vehicles, and oversee reservations. The intuitive design ensures a smooth user experience, from registration to booking confirmation."
         technologiesHeading="Technologies used include:"
         technologies="HTML, CSS, REACT, Node.js, Express, MongoDB"
         img={carRent}
