@@ -3,7 +3,7 @@ import { Card } from '../../components/Card';
 import lunchApp from '../../assets/images/lunchApp.png';
 import todoApp from '../../assets/images/todoApp.png';
 import homeService from '../../assets/images/homeService.png';
-import carRent from '../../assets/images/carRent.png'
+import carRent from '../../assets/images/carRent.png';
 import styles from './Projects.module.css';
 
 const cx = classNames.bind(styles);
